@@ -1,0 +1,8 @@
+conda create -n dac python=3.11
+conda update conda
+conda activate dac
+conda install -c conda-forge onnx  # Install ONNX via conda to avoid build issues
+pip install -r requirements.txt
+pip install -e ".[dev]"  # Install in editable mode with dev dependencies
+rehash
+pytest
