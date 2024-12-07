@@ -8,8 +8,8 @@ graph LR
     C --> D[ShiftPhase<br>Optional]
     D --> E[To Model]
 
-    style A fill:#f9f,stroke:#333
-    style E fill:#f9f,stroke:#333
+    style A fill:#e6ccff,stroke:#333,color:#000
+    style E fill:#e6ccff,stroke:#333,color:#000
 ```
 
 ## Initial Convolution Mapping
@@ -29,6 +29,6 @@ graph LR
 
     A --> B --> C
 
-    style A fill:#f9f,stroke:#333
-    style C fill:#bbf,stroke:#333
+    style A fill:#e6ccff,stroke:#333,color:#000
+    style C fill:#cce0ff,stroke:#333,color:#000
 ```
