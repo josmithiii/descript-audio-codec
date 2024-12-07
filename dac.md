@@ -3,6 +3,7 @@
 graph LR
     subgraph Input
         A[Audio Input<br>44.1kHz] --> B[Preprocessing]
+        style A fill:#e6ccff,stroke:#333,color:#000
     end
 
     subgraph Encoder
@@ -21,6 +22,7 @@ graph LR
         I --> L[VQ 3]
         I --> M[...]
         I --> N[VQ 9]
+        style I fill:#e6ccff,stroke:#333,color:#000
     end
 
     subgraph Decoder
@@ -38,6 +40,7 @@ graph LR
     J --> O
     
     T --> U[Audio Output<br>44.1kHz]
+    style U fill:#e6ccff,stroke:#333,color:#000
 
     style A fill:#f9f,stroke:#333
     style U fill:#f9f,stroke:#333
