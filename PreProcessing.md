@@ -1,14 +1,19 @@
+# Audio Preprocessing Pipeline
+
+## Volume Normalization and Processing
 ```mermaid
-graph TD
-    graph LR
-        A[Raw Audio] --> B[Volume Normalization<br>-16dB]
-        B --> C[RescaleAudio<br>Ensure Max ≤ 1.0]
-        C --> D[ShiftPhase<br>Optional]
-        D --> E[To Model]
+graph LR
+    A[Raw Audio] --> B[Volume Normalization<br>-16dB]
+    B --> C[RescaleAudio<br>Ensure Max ≤ 1.0]
+    C --> D[ShiftPhase<br>Optional]
+    D --> E[To Model]
 
-        style A fill:#f9f,stroke:#333
-        style E fill:#f9f,stroke:#333
+    style A fill:#f9f,stroke:#333
+    style E fill:#f9f,stroke:#333
+```
 
+## Initial Convolution Mapping
+```mermaid
 graph LR
     subgraph Input
         A[Audio Signal<br>Shape: 1 x T] 
